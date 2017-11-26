@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Funcionamiento básico de CSS</title>
+    <link href="img/u.png" rel="shortcut icon" type="../image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+<body>
+<div class="container">
+ <img src="../img/banner.png" class="img-responsive" alt="Responsive image">       
+<div class="container1 col-md-12">
+          
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+ 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="#"><img src="../img/u.png" alt="" style="width: 25px" ></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../Index.html">INICIO <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LECTURAS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Lectura1.html">Html basico</a></li>
+            <li><a href="Lectura2.html">Css basico</a></li>
+            <li><a href="Lectura3.html">Github </a></li>
+            <li><a href="Lectura4.html">Historia HTML5</a></li>
+            <li><a href="Lectura5.html">Historia CSS3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MULTIMEDIA <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Multimedia1.html">Imagenes</a></li>
+            <li><a href="Multimedia2.html">Videos</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ACTIVIDADES<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Actividades1.html">Actividad HTML</a></li>
+            <li><a href="Actividades2.html">Actividad CSS3</a></li>
+            <li><a href="Actividades3.html">Actividad GitHub</a></li>
+          </ul>
+        </li>
+        <li><a href="Autores.html">AUTORES</a></li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="col-md-9 article">
+   
+   <h1>Funcionamiento básico de CSS</h1>
+   <p>Antes de que se generalizara el uso de CSS, los diseñadores de páginas web utilizaban etiquetas HTML especiales para modificar el aspecto de los elementos de la página. El siguiente ejemplo muestra una página HTML con estilos definidos sin utilizar CSS:</p>
+   <img src="../img/Captura.PNG" class="img-thumbnail">
+   <p>El ejemplo anterior utiliza la etiqueta "font" con sus atributos color, face y size para definir el color, el tipo y el tamaño de letra de cada elemento de la página.</p>
+   <p>El problema de utilizar este método para definir el aspecto de los elementos se puede ver claramente con el siguiente ejemplo: si la página tuviera 50 elementos diferentes, habría que insertar 50 etiquetas "font". Si el sitio web entero se compone de 10.000 páginas diferentes, habría que definir 500.000 etiquetas  "font". Como cada etiqueta  "font" tiene tres atributos, habría que definir 1.5 millones de atributos.</p>
+   <p>Como el diseño de los sitios web está en constante evolución, es habitual modificar cada cierto tiempo el aspecto de las páginas del sitio. Siguiendo con el ejemplo anterior, cambiar el aspecto del sitio requeriría modificar 500.000 etiquetas y 1.5 millones de atributos.</p>
+    <p>CSS permite separar los contenidos de la página y la información sobre su aspecto. En el ejemplo anterior, dentro de la propia página HTML se crea una zona especial en la que se incluye toda la información relacionada con los estilos de la página.</p>
+   <p>Utilizando CSS, se pueden establecer los mismos estilos con menos esfuerzo y sin ensuciar el código HTML de los contenidos con etiquetas "font". Como se verá más adelante, la etiqueta "style crea una zona especial donde se incluyen todas las reglas CSS que se aplican en la página.</p>
+   <p>En el ejemplo anterior, dentro de la zona de CSS se indica que todas las etiquetas "h1" de la página se deben ver de color rojo, con un tipo de letra Arial y con un tamaño de letra grande. Además, las etiquetas "p"de la página se deben ver de color gris, con un tipo de letra Verdana y con un tamaño de letra medio.</p>
+   
+   
+</div>
+<div class="col-md-3">
+    <aside>
+    <center><a class="twitter-follow-button" data-show-count="true"><b>Twitter UNAD</b></a></center>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline"  href="https://twitter.com/search?q=%40UniversidadUNAD" data-widget-id="922485137203396608">Tweets sobre @UniversidadUNAD</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>                
+</aside>
+<a href="https://www.contadorvisitasgratis.com" title="contador de visitas para blog"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=zbfn46xpm7a5nyjn6y3ug6rm2tarfa6a" border="0" title="contador de visitas para blog" alt="contador de visitas para blog"></a>
+</div>
+
+<div class="col-md-12 footer">
+<div class="col-md-10">
+    <H4>Diana Cristina Trujillo</H4>
+    
+</div>
+<div class="col-md-2" >
+    <img src="../img/Logo_unad.png" class="img-responsive" alt="Responsive image" style="padding: 15px">
+</div>
+
+</div>
+</div>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Una breve historia de Git</title>
+    <link href="img/u.png" rel="shortcut icon" type="../image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+</head>
+<body>
+<div class="container">
+ <img src="../img/banner.png" class="img-responsive" alt="Responsive image">       
+<div class="container1 col-md-12">
+          
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+ 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="#"><img src="../img/u.png" alt="" style="width: 25px" ></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../Index.html">INICIO <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LECTURAS <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Lectura1.html">Html basico</a></li>
+            <li><a href="Lectura2.html">Css basico</a></li>
+            <li><a href="Lectura3.html">Github </a></li>
+            <li><a href="Lectura4.html">Historia HTML5</a></li>
+            <li><a href="Lectura5.html">Historia CSS3</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MULTIMEDIA <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Multimedia1.html">Imagenes</a></li>
+            <li><a href="Multimedia2.html">Videos</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ACTIVIDADES<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Actividades1.html">Actividad HTML</a></li>
+            <li><a href="Actividades2.html">Actividad CSS3</a></li>
+            <li><a href="Actividades3.html">Actividad GitHub</a></li>
+          </ul>
+        </li>
+        <li><a href="Autores.html">AUTORES</a></li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+<div class="col-md-9 article">
+   
+   <h1>Una breve historia de Git</h1>
+   <p>Como muchas de las grandes cosas en esta vida, Git comenzó con un poco de destrucción creativa y bastante polémica. El núcleo de Linux es un proyecto de software de código abierto con un alcance bastante grande. Durante la mayor parte del mantenimiento del núcleo de Linux (1991-2002), los cambios en el software se pasaron en forma de parches y archivos. En 2002, el proyecto del núcleo de Linux empezó a usar un DVCS propietario llamado BitKeeper.</p>
+    <p>En 2005, la relación entre la comunidad que desarrollaba el núcleo de Linux y la compañía que desarrollaba BitKeeper se vino abajo, y la herramienta dejó de ser gratuita. Esto impulsó a la comunidad de desarrollo de Linux (y en particular a Linus Torvalds, el creador de Linux) a desarrollar su propia herramienta basada en algunas de las lecciones que aprendieron durante el uso de BitKeeper. Algunos de los objetivos del nuevo sistema fueron los siguientes:</p>
+   <ul>
+       <li>Velocidad</li>
+       <li>Diseño sencillo</li>
+       <li>Fuerte apoyo al desarrollo no lineal (miles de ramas paralelas)</li>
+       <li>Completamente distribuido</li>
+       <li>Capaz de manejar grandes proyectos como el núcleo de Linux de manera eficiente (velocidad y tamaño de los datos)</li>
+   </ul>
+   
+   <p>Desde su nacimiento en 2005, Git ha evolucionado y madurado para ser fácil de usar y aún así conservar estas cualidades iniciales. Es tremendamente rápido, muy eficiente con grandes proyectos, y tiene un increíble sistema de ramas (branching) para desarrollo no lineal</p>
+   <p>Entonces, ¿qué es Git en pocas palabras? Es muy importante asimilar esta sección, porque si entiendes lo que es Git y los fundamentos de cómo funciona, probablemente te sea mucho más fácil usar Git de manera eficaz. A medida que aprendas Git, intenta olvidar todo lo que puedas saber sobre otros VCSs, como Subversion y Perforce; hacerlo te ayudará a evitar confusiones sutiles a la hora de utilizar la herramienta. Git almacena y modela la información de forma muy diferente a esos otros sistemas, a pesar de que su interfaz sea bastante similar; comprender esas diferencias ayudará a evitar que te confundas a la hora de usarlo.</p>
+   <p>La principal diferencia entre Git y cualquier otro VCS (Subversion y compañía incluidos) es cómo Git modela sus datos. Conceptualmente, la mayoría de los demás sistemas almacenan la información como una lista de cambios en los archivos. Estos sistemas (CVS, Subversion, Perforce, Bazaar, etc.) modelan la información que almacenan como un conjunto de archivos y las modificaciones hechas sobre cada uno de ellos a lo largo del tiempo, como ilustra la Figura </p><br>
+   <img src="../img/Captura2.PNG" class="img-thumbnail">
+
+   <br><p>Git no modela ni almacena sus datos de este modo. En cambio, Git modela sus datos más como un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, o guardas el estado de tu proyecto en Git, él básicamente hace una foto del aspecto de todos tus archivos en ese momento, y guarda una referencia a esa instantánea. Para ser eficiente, si los archivos no se han modificado, Git no almacena el archivo de nuevo — sólo un enlace al archivo anterior idéntico que ya tiene almacenado</p>
+   
+</div>
+<div class="col-md-3">
+    <aside>
+    <center><a class="twitter-follow-button" data-show-count="true"><b>Twitter UNAD</b></a></center>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline"  href="https://twitter.com/search?q=%40UniversidadUNAD" data-widget-id="922485137203396608">Tweets sobre @UniversidadUNAD</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>                
+</aside>
+<a href="https://www.contadorvisitasgratis.com" title="contador de visitas para blog"><img src="https://counter8.freecounter.ovh/private/contadorvisitasgratis.php?c=zbfn46xpm7a5nyjn6y3ug6rm2tarfa6a" border="0" title="contador de visitas para blog" alt="contador de visitas para blog"></a>
+</div>
+
+<div class="col-md-12 footer">
+<div class="col-md-10">
+    <H4>Diana Cristina Trujillo</H4>
+    
+</div>
+<div class="col-md-2" >
+    <img src="../img/Logo_unad.png" class="img-responsive" alt="Responsive image" style="padding: 15px">
+</div>
+
+</div>
+</div>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

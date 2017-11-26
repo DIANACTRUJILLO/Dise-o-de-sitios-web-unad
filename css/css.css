@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+}
+
+h1{
+	text-align: center;
+}
+h4{
+	color: #FFFFFF;
+	padding-top: 3px;
+	padding-left: 8%;
+}
+div{
+	text-align: justify;
+}
+.footer{
+	box-shadow: 0px 0px 70px;
+    margin-top: 40px;
+	background: rgba(36, 36, 36, 0.9);
+}
+.article{
+    margin-top: 15px;
+    margin-bottom:40px;
+}
+.images{
+    width: 250px;
+    height: 250px;  
+}
+.container1 {
+	margin-top: 15px;
+}
+.foto{
+    -webkit-box-shadow: -4px 2px 17px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 2px 17px 1px rgba(0,0,0,0.75);
+box-shadow: -4px 2px 17px 1px rgba(0,0,0,0.75);
+}
